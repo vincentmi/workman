@@ -110,6 +110,8 @@ RUN set -xe \
 		libxml2-dev \
 		openssl-dev \
 		sqlite-dev \
+		composer \
+		supervisor \
 	\
 	&& export CFLAGS="$PHP_CFLAGS" \
 		CPPFLAGS="$PHP_CPPFLAGS" \
@@ -143,6 +145,7 @@ RUN set -xe \
 		--with-libedit \
 		--with-openssl \
 		--with-zlib \
+		--enable-pcntl  \
 		\
 # bundled pcre does not support JIT on s390x
 # https://manpages.debian.org/stretch/libpcre3-dev/pcrejit.3.en.html#AVAILABILITY_OF_JIT_SUPPORT
