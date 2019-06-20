@@ -146,6 +146,10 @@ RUN set -xe \
 		--with-openssl \
 		--with-zlib \
 		--enable-pcntl  \
+		--with-mcrypt \
+		--with-mhash \
+		--enable-sockets \
+		--with-pdo-mysql \
 		\
 # bundled pcre does not support JIT on s390x
 # https://manpages.debian.org/stretch/libpcre3-dev/pcrejit.3.en.html#AVAILABILITY_OF_JIT_SUPPORT
